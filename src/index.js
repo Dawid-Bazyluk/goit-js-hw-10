@@ -58,9 +58,7 @@ function renderingResults(countries) {
       <p class="country-info__item"><span class="country-info__label">Capital:</span> ${
         country.capital
       }</p>
-      <p class="country-info__item"><span class="country-info__label">Population:</span> ${
-        country.population
-      }</p>
+      <p class="country-info__item"><span class="country-info__label">Population:</span> ${country.population.toLocaleString()}</p>
       <p class="country-info__item"><span class="country-info__label">Languages:</span> ${Object.values(
         country.languages
       ).join(', ')}</p>`;
